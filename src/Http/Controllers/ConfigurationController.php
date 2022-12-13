@@ -60,7 +60,7 @@ class ConfigurationController
     {
         try {
             DB::beginTransaction();
-            $configurations = $this->configurationService->updateOrCreate($request->validated());
+            $configurations = $this->configurationService->updateOrCreate($request->validated()['configurations']);
             DB::commit();
             return new JsonResponse(compact('configurations'), Response::HTTP_CREATED);
         } catch (Exception $exception) {
