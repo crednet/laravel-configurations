@@ -11,12 +11,12 @@ class ConfigurationsServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../../config/configurations.php' => config_path('configurations.php'),
-        ]);
+        ], 'laravel-assets');
 
         $this->publishes([
             __DIR__ . '/../../database/migrations/create_configurations_table.stub' =>
                         database_path('migrations/' . date('Y_m_d_His') . '_create_configurations_table.php'),
-        ]);
+        ], 'laravel-assets');
 
         Route::group(
             $this->getRouteGroupAttributes(),
