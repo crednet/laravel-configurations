@@ -1,0 +1,22 @@
+{
+    "name": "credpal/configurations",
+    "description": "",
+    "type": "library",
+    "keywords": [],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Credpal\\Configurations\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antonio Okoro",
+            "email": "cheezytony1@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^9.38",
+        "illuminate/database": "^9.38"
+    }
+}
