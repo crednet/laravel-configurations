@@ -1,6 +1,6 @@
 {
-    "name": "credpal/configurations",
-    "description": "",
+    "name": "credpal/laravel-configurations",
+    "description": "Configuration management package for laravel applications.",
     "type": "library",
     "keywords": [],
     "license": "MIT",
